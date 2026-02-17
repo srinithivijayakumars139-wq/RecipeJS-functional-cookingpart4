@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RecipeJS - Final</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🍽 RecipeJS</h1>
+
+  <!-- SEARCH -->
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search by name or ingredient...">
+  </div>
+
+  <!-- FILTERS -->
+  <div class="controls">
+    <button data-filter="all">All</button>
+    <button data-filter="easy">Easy</button>
+    <button data-filter="medium">Medium</button>
+    <button data-filter="hard">Hard</button>
+    <button data-filter="quick">Quick (&lt;30 mins)</button>
+    <button data-filter="favorites">❤️ Favorites</button>
+  </div>
+
+  <!-- SORT -->
+  <div class="controls">
+    <button data-sort="name">Name (A–Z)</button>
+    <button data-sort="time">Time (Fastest)</button>
+  </div>
+
+  <!-- COUNTER -->
+  <p id="recipeCounter"></p>
+
+  <!-- RECIPES -->
+  <div id="recipes-container" class="recipes"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
